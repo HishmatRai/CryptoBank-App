@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, ImageBackground, TouchableOpacity, Image } from 'react-native';
-import { Entypo } from '@expo/vector-icons';
+import { Feather, FontAwesome5, AntDesign } from '@expo/vector-icons';
 import ToggleSwitch from "toggle-switch-react-native";
 export default function Home(props) {
     const [toggle, setToggle] = useState(false);
@@ -11,8 +11,21 @@ export default function Home(props) {
             <View>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
                     <View style={styles._body}>
+                        <View style={styles.header_main}>
+                            <View style={styles._header_first_column}>
+                                <TouchableOpacity>
+                                    <Feather name="settings" size={24} color="black" />
+                                </TouchableOpacity>
+                                <FontAwesome5 name="star-of-life" size={24} color="black" />
+                                <Text>*</Text>
+                                <Text>EUR</Text>
+                            </View>
+                            <View>
+                                <AntDesign name="wechat" size={24} color="black" />
+                            </View>
+                        </View>
                         <Text style={styles._title}>Home</Text>
-                        <ToggleSwitch
+                        {/* <ToggleSwitch
                               isOn={toggle}
                               onColor="white"
                               offColor="white"
@@ -37,7 +50,7 @@ export default function Home(props) {
                               }}
                               size="medium"
                               onToggle={(isOn) => setToggle(!toggle )}
-                          />
+                          /> */}
 
                     </View>
                 </ScrollView>
@@ -113,8 +126,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         alignSelf: "center",
         justifyContent: "space-between",
-        paddingLeft:10,
-        paddingRight:20
+        paddingLeft: 10,
+        paddingRight: 20
     },
     _home: {
         width: 50,
@@ -164,5 +177,17 @@ const styles = StyleSheet.create({
     bitcoin_iocn: {
         width: 67,
         height: 67,
+    },
+    header_main: {
+        flexDirection: "row",
+        marginTop: 80,
+        backgroundColor: "red",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: 20
+    },
+    _header_first_column:{
+        flexDirection:"row",
+        alignItems:"center"
     }
 });
