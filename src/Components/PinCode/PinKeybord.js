@@ -23,8 +23,9 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   header: {
-    fontSize: 30,
-    fontWeight: "500",
+   textAlign:"center",
+   color:"#1F304C",
+   fontWeight:'bold'
   },
   pin: {
     fontFamily: "Droid Sans Mono",
@@ -74,6 +75,7 @@ class PinKeyboard extends React.Component {
 
   renderButton(num) {
     return (
+      
       <Text onPress={() => this.handlePress(num)} style={styles.btn}>
         {num}
       </Text>
@@ -87,7 +89,7 @@ class PinKeyboard extends React.Component {
 
     return (
       <View style={styles.pad}>
-        <Text style={styles.header}>Enter pin:</Text>
+        <Text style={styles.header}>Enter passcode</Text>
         <View style={styles.row}>
           <Text style={styles.pin}>
             {marks}

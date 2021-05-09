@@ -202,13 +202,13 @@ export default function Track(props) {
                 width: "35%",
               }}
             >
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => props.navigation.navigate("Home")}>
                 <Image
                   source={require("./../../img/home.png")}
                   style={styles.home_iocn}
                 />
               </TouchableOpacity>
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Account")}>
                 <Image
                   source={require("./../../img/account.png")}
                   style={styles.account_iocn}
@@ -224,14 +224,14 @@ export default function Track(props) {
                 width: "35%",
               }}
             >
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Track")}>
                 <Image
                   source={require("./../../img/track.png")}
                   style={styles.track_iocn}
                 />
                 <Text style={styles._tab_txt}>Track</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Card")}>
                 <Image
                   source={require("./../../img/card.png")}
                   style={styles.account_iocn}

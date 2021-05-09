@@ -10,9 +10,8 @@ import {
   Image,
 } from "react-native";
 import { Feather, Ionicons, AntDesign } from "@expo/vector-icons";
-import ToggleSwitch from "toggle-switch-react-native";
 export default function Home(props) {
-  const [toggle, setToggle] = useState(false);
+
   let CardData = [
     {
       icon: require("./../../img/card1icon.png"),
@@ -89,7 +88,7 @@ export default function Home(props) {
           <View style={styles._body}>
             <View style={styles.header_main}>
               <View style={styles._header_first_column}>
-                <TouchableOpacity style={styles.setting_btn}>
+                <TouchableOpacity style={styles.setting_btn} onPress={() => props.navigation.navigate("Profile")}>
                   <Feather name="settings" size={20} color="white" />
                 </TouchableOpacity>
                 <Text style={styles._star}>*</Text>
@@ -110,7 +109,7 @@ export default function Home(props) {
                 </Text>
               </View>
               <View style={styles._header_first_column}>
-                <TouchableOpacity style={styles._pay_btn}>
+                <TouchableOpacity style={styles._pay_btn} onPress={() => props.navigation.navigate("SelectPayment")}>
                   <Image
                     source={require("./../../img/payicon.png")}
                     style={styles.pay_iocn}
@@ -358,32 +357,7 @@ export default function Home(props) {
               <Text style={styles._refer_txt}>Refer & Get $25 USD</Text>
             </View>
             <View style={{ marginBottom: 70 }}></View>
-            {/* <ToggleSwitch
-                              isOn={toggle}
-                              onColor="white"
-                              offColor="white"
-                              // label="Example label"
-                              labelStyle={{ color: "black", fontWeight: "900" }}
-                              style={{
-                                  borderWidth: 2,
-                                  borderColor: "black",
-                                  borderRadius: 30,
-                              }}
-                              thumbOffStyle={{
-                                  color: "blue",
-                                  backgroundColor: "white",
-                                  borderWidth: 3,
-                                  borderColor: "red",
-                              }}
-                              thumbOnStyle={{
-                                  color: "blue",
-                                  backgroundColor: "white",
-                                  borderWidth: 3,
-                                  borderColor: "green",
-                              }}
-                              size="medium"
-                              onToggle={(isOn) => setToggle(!toggle )}
-                          /> */}
+          
           </View>
         </ScrollView>
       </View>
@@ -409,13 +383,13 @@ export default function Home(props) {
                 width: "35%",
               }}
             >
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => props.navigation.navigate("Home")}>
                 <Image
                   source={require("./../../img/home.png")}
                   style={styles.home_iocn}
                 />
               </TouchableOpacity>
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Account")}>
                 <Image
                   source={require("./../../img/account.png")}
                   style={styles.account_iocn}
@@ -431,14 +405,14 @@ export default function Home(props) {
                 width: "35%",
               }}
             >
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Track")}>
                 <Image
                   source={require("./../../img/track.png")}
                   style={styles.track_iocn}
                 />
                 <Text style={styles._tab_txt}>Track</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles._account_tab}>
+              <TouchableOpacity style={styles._account_tab} onPress={() => props.navigation.navigate("Card")}>
                 <Image
                   source={require("./../../img/card.png")}
                   style={styles.account_iocn}

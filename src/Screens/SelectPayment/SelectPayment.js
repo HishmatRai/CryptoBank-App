@@ -29,7 +29,7 @@ export default function SelectPayment(props) {
       >
         <View style={{ margin: 20 }}>
           <View style={styles._header}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.goBack()}>
               <Ionicons name="md-arrow-back-sharp" size={24} color="black" />
             </TouchableOpacity>
             <Text
@@ -53,7 +53,7 @@ export default function SelectPayment(props) {
             Your payment currency is used to display your balance, transactions,
             and purchase crypto currency throughout the app
           </Text>
-          <TouchableOpacity style={styles.Confirm_btn}>
+          <TouchableOpacity style={styles.Confirm_btn} onPress={() => props.navigation.navigate("Home")}>
               <Text style={styles.Confirm_btn_txt}>Confirm</Text>
           </TouchableOpacity>
         </View>

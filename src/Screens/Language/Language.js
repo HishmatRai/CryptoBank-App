@@ -32,7 +32,7 @@ export default function Language(props) {
       >
         <View style={{ margin: 20 }}>
           <View style={styles._header}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.goBack()}>
               <Ionicons name="md-arrow-back-sharp" size={24} color="black" />
             </TouchableOpacity>
             <Text
@@ -51,7 +51,7 @@ export default function Language(props) {
             })}
           </View>
 
-          <TouchableOpacity style={styles.Confirm_btn}>
+          <TouchableOpacity style={styles.Confirm_btn} onPress={() => props.navigation.navigate("Profile")}>
               <Text style={styles.Confirm_btn_txt}>Confirm</Text>
           </TouchableOpacity>
         </View>
