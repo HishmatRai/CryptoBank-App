@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Select,SignUp,Login,SliderOne,SliderTwo,SliderThree,SliderFour,Home} from './../Screens/index';
+import {Select,SignUp,Login,SliderOne,SliderTwo,SliderThree,SliderFour,Home,Account,Card,Track,SelectPayment,Language} from './../Screens/index';
 const Stack = createStackNavigator();
 function Navigation() {
   return (
@@ -14,7 +14,12 @@ function Navigation() {
         <Stack.Screen name="SliderTwo" component={SliderTwo} options={{ headerShown: false }}/>
         <Stack.Screen name="SliderThree" component={SliderThree} options={{ headerShown: false }}/>
         <Stack.Screen name="SliderFour" component={SliderFour} options={{ headerShown: false }}/> */}
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/>
+        {/* <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/> */}
+        {/* <Stack.Screen name="Account" component={Account} options={{ headerShown: false }}/> */}
+        {/* <Stack.Screen name="Card" component={Card} options={{ headerShown: false }}/> */}
+        {/* <Stack.Screen name="Track" component={Track} options={{ headerShown: false }}/> */}
+        {/* <Stack.Screen name="SelectPayment" component={SelectPayment} options={{ headerShown: false }}/> */}
+        <Stack.Screen name="Language" component={Language} options={{ headerShown: false }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
