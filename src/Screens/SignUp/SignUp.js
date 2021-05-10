@@ -63,12 +63,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#C4E9F2',
+        paddingTop:30
     },
     _logo: {
         alignSelf: "center",
         marginTop: 100,
-        width: 157,
-        height: 121
+        width: 100,
+        height: 100
     },
     _select_main: {
         marginTop: 120,

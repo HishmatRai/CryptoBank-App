@@ -176,7 +176,7 @@ export default function Trade(props) {
                   source={require("./../../img/euro2.png")}
                   style={styles.account_icon}
                 />
-                <Text style={styles._btn_txt}>Warn</Text>
+                <Text style={styles._btn_txt}>Earn</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles._btn}>
                 <Image
@@ -187,7 +187,7 @@ export default function Trade(props) {
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity style={styles._Cross_btn}>
+            <TouchableOpacity style={styles._Cross_btn} onPress={() => props.navigation.goBack()}>
             <Image
                   source={require("./../../img/cross.png")}
                   style={styles.account_icon}
@@ -203,6 +203,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C4E9F2",
+    paddingTop:30
   },
   card: {
     marginTop: 40,

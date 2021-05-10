@@ -64,11 +64,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
+    paddingTop:30
   },
   _header: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 40,
+    marginTop: 20,
   },
 
   _select_main: {

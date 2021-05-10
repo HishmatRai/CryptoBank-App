@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     _logo: {
         alignSelf: "center",
         marginTop: 100,
-        width: 157,
-        height: 121
+        width: 100,
+        height: 100
     },
     _select_main: {
         position: "absolute",

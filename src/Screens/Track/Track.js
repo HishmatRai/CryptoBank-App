@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
   Image,
   TextInput,
-  StatusBar
 } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { AntDesign, Ionicons, Entypo, FontAwesome } from "@expo/vector-icons";
 export default function Track(props) {
   const [text, setText] = React.useState("");
@@ -89,12 +89,7 @@ export default function Track(props) {
   ];
   return (
     <View style={styles.container}>
-       <StatusBar
-        barStyle="black"
-        hidden={false}
-        backgroundColor="#C4E9F2"
-        translucent={true}
-      />
+ <StatusBar style="auto" />
       <View>
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -181,7 +176,7 @@ export default function Track(props) {
         </ScrollView>
       </View>
       <View style={styles._bitcoin_btn_view}>
-        <TouchableOpacity style={styles.bitcoin_btn}>
+        <TouchableOpacity style={styles.bitcoin_btn} onPress={() => props.navigation.navigate("Trade")}>
           <Image
             source={require("./../../img/bitcoin.png")}
             style={styles.bitcoin_iocn}
@@ -250,6 +245,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C4E9F2",
+    paddingTop:30
   },
   _tab_main: {
     // backgroundColor: "red",
@@ -323,7 +319,7 @@ const styles = StyleSheet.create({
   },
   _header_main: {
     margin: 20,
-    marginTop: 70,
+    marginTop: 40,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",

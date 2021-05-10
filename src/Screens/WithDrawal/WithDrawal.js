@@ -21,7 +21,7 @@ export default function WithDrawal(props) {
             <Text style={{ color: "#1F304C", fontSize: 20, marginRight: 30 }}>
               EUR Withdrawal Process
             </Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.goBack()}>
               <Ionicons name="close-outline" size={24} color="#1F304C" />
             </TouchableOpacity>
           </View>
@@ -135,6 +135,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C4E9F2",
+    paddingTop:30
   },
   _header: {
     marginTop: 40,

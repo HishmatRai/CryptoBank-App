@@ -175,7 +175,7 @@ export default function Card(props) {
         </ScrollView>
       </View>
       <View style={styles._bitcoin_btn_view}>
-        <TouchableOpacity style={styles.bitcoin_btn}>
+        <TouchableOpacity style={styles.bitcoin_btn} onPress={() => props.navigation.navigate("Trade")}>
           <Image
             source={require("./../../img/bitcoin.png")}
             style={styles.bitcoin_iocn}
@@ -244,6 +244,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C4E9F2",
+    paddingTop:30
   },
   _tab_main: {
     // backgroundColor: "red",

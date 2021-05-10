@@ -204,8 +204,8 @@ export default function Account(props) {
           </View>
         </ScrollView>
       </View>
-      <View style={styles._bitcoin_btn_view}>
-        <TouchableOpacity style={styles.bitcoin_btn}>
+      <View style={styles._bitcoin_btn_view} >
+        <TouchableOpacity style={styles.bitcoin_btn} onPress={() => props.navigation.navigate("Trade")}>
           <Image
             source={require("./../../img/bitcoin.png")}
             style={styles.bitcoin_iocn}
@@ -274,6 +274,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#C4E9F2",
+    paddingTop:30
   },
   _tab_main: {
     // backgroundColor: "red",
@@ -347,7 +348,7 @@ const styles = StyleSheet.create({
   },
   header_main: {
     flexDirection: "row",
-    marginTop: 50,
+    marginTop: 30,
     // backgroundColor: "red",
     alignItems: "center",
     justifyContent: "space-between",
