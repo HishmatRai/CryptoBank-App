@@ -15,7 +15,9 @@ export default function Login(props) {
                     </TouchableOpacity>
                     <Text style={styles._heading}>Log in</Text>
                 </View>
-                <Image source={require("./../../img/logo2.png")} style={styles._logo} />
+                <TouchableOpacity style={styles.logo_btn}>
+                <Image source={require("./../../img/logoicon.png")} style={styles._logo} />
+                </TouchableOpacity>
             </View>
             <View>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
@@ -48,8 +50,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#C4E9F2',
     },
     _logo: {
-        width: 40,
-        height: 40
+        width: 20,
+        height: 20,
+    },
+    logo_btn:{
+backgroundColor:"white",
+width: 40,
+height: 40,
+borderRadius:40/2,
+alignItems:"center",
+justifyContent:"center"
+
     },
     _select_main: {
         marginTop: 250,
