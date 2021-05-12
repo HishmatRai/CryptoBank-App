@@ -11,7 +11,8 @@ export default function SliderOne(props) {
             <StatusBar style="auto" />
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
-                    <Image source={require("./../../img/mobile.png")} style={styles.mobile} />
+                    {/* <Image source={require("./../../img/mobile.png")} style={styles.mobile} /> */}
+                    <Image source={require("./../../img/sliderimage11.jpg")} style={styles.sliderimage12} />
                     <View style={styles._body}>
                         <Text style={styles._title}>Your</Text>
                         <Text style={styles._title}>Crypto Made</Text>
@@ -74,9 +75,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     _body: {
-        marginTop: -100,
+        // marginTop: -100,
         margin: 20,
         flex: 1,
+        marginTop:40
     },
     _des: {
         color: "#1F304C",
@@ -125,5 +127,13 @@ const styles = StyleSheet.create({
     _dot_main:{
         flexDirection:"row",
         alignItems:"center",
+    },
+    sliderimage12:{
+        marginTop: 100,
+        width: "100%",
+        height: 200,
+        alignItems: "center",
+        justifyContent: "center",
+        alignSelf: "center"
     }
 });

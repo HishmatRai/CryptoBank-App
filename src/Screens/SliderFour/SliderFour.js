@@ -11,11 +11,13 @@ export default function SliderFour(props) {
             <StatusBar style="auto" />
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
-                    <Image source={require("./../../img/sliderfourlogo.png")} style={styles.mobile} />
+                    {/* <Image source={require("./../../img/sliderfourlogo.png")} style={styles.mobile} /> */}
+                    <Image source={require("./../../img/sliderimage44.jpg")} style={styles.sliderimage12} />
                     <Image source={require("./../../img/line.png")} style={styles.line} />
                     <View style={styles._body}>
                         <Text style={styles._title}>Your Metal Card.</Text>
                         <Text style={styles._title}>Best Caskback. Ever.</Text>
+                    
                         <Text style={{ color: "#1F304C", fontSize: 14, marginTop: 10 }}>Up to 80% cashback on spending on your {"\n"}Crypto.com Visa Card</Text>
                     </View>
                 </ScrollView>
@@ -135,5 +137,13 @@ const styles = StyleSheet.create({
     },
     line: {
         width: "100%"
+    },
+    sliderimage12:{
+        marginTop: 100,
+        width: "100%",
+        height: 250,
+        alignItems: "center",
+        justifyContent: "center",
+        alignSelf: "center"
     }
 });

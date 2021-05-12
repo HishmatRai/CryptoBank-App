@@ -11,7 +11,8 @@ export default function SliderThree(props) {
             <StatusBar style="auto" />
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
-                    <Image source={require("./../../img/sliderthreelogo.png")} style={styles.mobile} />
+                    {/* <Image source={require("./../../img/sliderthreelogo.png")} style={styles.mobile} /> */}
+                    <Image source={require("./../../img/sliderimage22.jpg")} style={styles.sliderimage12} />
                     <Image source={require("./../../img/line.png")} style={styles.line} />
                     <View style={styles._body}>
                         <Text style={styles._title}>You everything.</Text>
@@ -136,5 +137,13 @@ const styles = StyleSheet.create({
     },
     line: {
         width: "100%"
+    },
+    sliderimage12:{
+        marginTop: 100,
+        width: "100%",
+        height: 150,
+        alignItems: "center",
+        justifyContent: "center",
+        alignSelf: "center"
     }
 });
