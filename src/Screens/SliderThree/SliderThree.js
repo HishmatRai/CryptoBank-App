@@ -16,7 +16,7 @@ export default function SliderThree(props) {
                     {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
                         <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10,fontWeight:"bold" }}>Use cryptobank now we bring the future to you.</Text>
-                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10,fontWeight:"bold" }}>Bitcoin is the best{"\n"}performing asset class {"\n"}of all times and CTYPTOBANK {"\n"}is the best place for trading, {"\n"}as the chart below shows.</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10,fontWeight:"bold" }}>Bitcoin is the best{"\n"}performing asset class {"\n"}of all times and CTYPTOBANK {"\n"}is the best place for trading it.</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -29,12 +29,12 @@ export default function SliderThree(props) {
                     <MaterialIcons name="keyboard-backspace" size={24} color="#1F304C" />
                 </TouchableOpacity>
                 <View style={styles._dot_main}>
+                    {/* <View style={styles._dots}></View> */}
                     <View style={styles._dots}></View>
                     <View style={styles._dot_active}></View>
                     <View style={styles._dots}></View>
-                    <View style={styles._dots}></View>
                 </View>
-                <TouchableOpacity style={styles._tick_btn} onPress={() => props.navigation.navigate("SliderTwo")}>
+                <TouchableOpacity style={styles._tick_btn} onPress={() => props.navigation.navigate("SliderOne")}>
                     <AntDesign name="check" size={34} color="#1F304C" />
                 </TouchableOpacity>
             </View>

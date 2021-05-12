@@ -21,6 +21,7 @@ export default function SliderOne(props) {
                         <Text style={styles._des}>The U.S. dollar can be printed
                         {"\n"}at any time, flooding the
                         {"\n"}market with new currency.</Text>
+<Text style={styles._des}>But we have the best option a token that holds its currency difficult to manipulate</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -33,7 +34,7 @@ export default function SliderOne(props) {
                     <MaterialIcons name="keyboard-backspace" size={24} color="#1F304C" />
                 </TouchableOpacity>
                 <View style={styles._dot_main}>
-                    <View style={styles._dots}></View>
+                    {/* <View style={styles._dots}></View> */}
                     <View style={styles._dots}></View>
                     <View style={styles._dots}></View>
                     <View style={styles._dot_active}></View>

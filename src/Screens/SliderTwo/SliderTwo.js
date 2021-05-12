@@ -16,7 +16,7 @@ export default function SliderTwo(props) {
                     {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
                         <Text style={styles._des}>Cryptobank is the best {"\n"}place to earn,buy and trade {"\n"}your crypto.</Text>
-                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10 }}>On top of that you can {"\n"}consume your money with {"\n"}our crypto card.</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10 }}>On top of that you can {"\n"}consume your money with {"\n"}our crypto card!</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -29,12 +29,12 @@ export default function SliderTwo(props) {
                     <MaterialIcons name="keyboard-backspace" size={24} color="#1F304C" />
                 </TouchableOpacity>
                 <View style={styles._dot_main}>
-                    <View style={styles._dots}></View>
-                    <View style={styles._dots}></View>
+                    {/* <View style={styles._dots}></View> */}
                     <View style={styles._dot_active}></View>
                     <View style={styles._dots}></View>
+                    <View style={styles._dots}></View>
                 </View>
-                <TouchableOpacity style={styles._tick_btn} onPress={() => props.navigation.navigate("SliderOne")}>
+                <TouchableOpacity style={styles._tick_btn} onPress={() => props.navigation.navigate("SliderThree")}>
                     <AntDesign name="check" size={34} color="#1F304C" />
                 </TouchableOpacity>
             </View>
