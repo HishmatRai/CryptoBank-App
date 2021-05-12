@@ -12,13 +12,13 @@ export default function SliderFour(props) {
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
                     {/* <Image source={require("./../../img/sliderfourlogo.png")} style={styles.mobile} /> */}
-                    <Image source={require("./../../img/sliderimage44.jpg")} style={styles.sliderimage12} />
-                    <Image source={require("./../../img/line.png")} style={styles.line} />
+                    <Image source={require("./../../img/sliderimage44.png")} style={styles.sliderimage12} />
+                    {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
                         <Text style={styles._title}>Your Metal Card.</Text>
                         <Text style={styles._title}>Best Caskback. Ever.</Text>
                     
-                        <Text style={{ color: "#1F304C", fontSize: 14, marginTop: 10 }}>Up to 80% cashback on spending on your {"\n"}Crypto.com Visa Card</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 14, marginTop: 10 }}>Up to 8% cashback on spending on your {"\n"}Cryptobank.com Visa Card</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -139,9 +139,9 @@ const styles = StyleSheet.create({
         width: "100%"
     },
     sliderimage12:{
-        marginTop: 100,
+        marginTop: 15,
         width: "100%",
-        height: 250,
+        height: 331,
         alignItems: "center",
         justifyContent: "center",
         alignSelf: "center"

@@ -13,12 +13,10 @@ export default function SliderThree(props) {
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
                     {/* <Image source={require("./../../img/sliderthreelogo.png")} style={styles.mobile} /> */}
                     <Image source={require("./../../img/sliderimage22.jpg")} style={styles.sliderimage12} />
-                    <Image source={require("./../../img/line.png")} style={styles.line} />
+                    {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
-                        <Text style={styles._title}>You everything.</Text>
-                        <Text style={styles._title}>And more.</Text>
-                        <Text style={styles._des}>Pay with your card and we'll cover it.</Text>
-                        <Text style={{ color: "#1F304C", fontSize: 14, marginTop: 10 }}>Note : This offer is launched by crypto.com indepedently and there is no partnership between crypto.com and the mechants in this offer. crypto.com has the sole discreption to midify this offer at any time.</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10,fontWeight:"bold" }}>Use cryptobank now we bring the future to you.</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10,fontWeight:"bold" }}>Bitcoin is the best{"\n"}performing asset class {"\n"}of all times and CTYPTOBANK {"\n"}is the best place for trading, {"\n"}as the chart below shows.</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -136,12 +134,12 @@ const styles = StyleSheet.create({
         height: 100,
     },
     line: {
-        width: "100%"
+        width: "100%",
     },
     sliderimage12:{
-        marginTop: 100,
+        marginTop: 30,
         width: "100%",
-        height: 150,
+        height: 331,
         alignItems: "center",
         justifyContent: "center",
         alignSelf: "center"

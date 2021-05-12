@@ -16,7 +16,7 @@ export default function Track(props) {
   let ListCardData = [
     {
       counter: "1",
-      title: "STARRED",
+      title: "BITCOIN",
       subTitle: "BTC",
       proce: "$50.648,12",
       value: "+ 0,09%",

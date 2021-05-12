@@ -12,15 +12,11 @@ export default function SliderTwo(props) {
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
                     {/* <Image source={require("./../../img/slidertwologo.png")} style={styles.mobile} /> */}
-                    <Image source={require("./../../img/sliderimage33.jpg")} style={styles.sliderimage12} />
-                    <Image source={require("./../../img/line.png")} style={styles.line} />
+                    <Image source={require("./../../img/sliderimage33.png")} style={styles.sliderimage12} />
+                    {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
-                        <Text style={styles._title}>Your Travel.</Text>
-                        <Text style={styles._title}>In style.</Text>
-                        <Text style={styles._des}>10% Back on selected travel website.{"\n"}
-                        Unlimited Airport Lounge Access.{"\n"}
-Full reimbursement on selected{"\n"}membershiip.</Text>
-                        <Text style={{ color: "#1F304C", fontSize: 14, marginTop: 10 }}>Note : This offer is launched by crypto.com indepedently and there is no partnership between crypto.com and the mechants in this offer. crypto.com has the sole discreption to midify this offer at any time.</Text>
+                        <Text style={styles._des}>Cryptobank is the best {"\n"}place to earn,buy and trade {"\n"}your crypto.</Text>
+                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10 }}>On top of that you can {"\n"}consume your money with {"\n"}our crypto card.</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -85,7 +81,7 @@ const styles = StyleSheet.create({
     },
     _des: {
         color: "#1F304C",
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: "bold"
     },
     _step_main: {
@@ -141,9 +137,9 @@ const styles = StyleSheet.create({
         width: "100%"
     },
     sliderimage12:{
-        marginTop: 100,
+        marginTop: 15,
         width: "100%",
-        height: 120,
+        height: 331,
         alignItems: "center",
         justifyContent: "center",
         alignSelf: "center"

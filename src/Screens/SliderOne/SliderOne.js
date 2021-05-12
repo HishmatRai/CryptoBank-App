@@ -11,15 +11,16 @@ export default function SliderOne(props) {
             <StatusBar style="auto" />
             <View style={styles._main}>
                 <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
-                    {/* <Image source={require("./../../img/mobile.png")} style={styles.mobile} /> */}
-                    <Image source={require("./../../img/sliderimage11.jpg")} style={styles.sliderimage12} />
+                    <Image source={require("./../../img/mobile.png")} style={styles.mobile} />
+                    {/* <Image source={require("./../../img/sliderimage11.jpg")} style={styles.sliderimage12} /> */}
                     <View style={styles._body}>
-                        <Text style={styles._title}>Your</Text>
-                        <Text style={styles._title}>Crypto Made</Text>
-                        <Text style={styles._title}>Simples.</Text>
-                        <Text style={styles._des}>The best place to buy.sell and pay</Text>
-                        <Text style={styles._des}>with crypto.</Text>
-                        <Text style={styles._des}>Forgot the banks.let's go!</Text>
+                        <Text style={styles._title}>Bitcoin's Supply
+                        {"\n"}is a Key Factor in Driving
+                        {"\n"}Its Price
+</Text>
+                        <Text style={styles._des}>The U.S. dollar can be printed
+                        {"\n"}at any time, flooding the
+                        {"\n"}market with new currency.</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
@@ -52,10 +53,8 @@ const styles = StyleSheet.create({
     },
     _title: {
         color: "#1F304C",
-        fontSize: 35,
+        fontSize: 18,
         fontWeight: "bold",
-        letterSpacing: 0.5,
-        marginTop: -15
     },
     _main: {
     },
@@ -75,14 +74,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     _body: {
-        // marginTop: -100,
+        marginTop: -50,
         margin: 20,
         flex: 1,
-        marginTop:40
+        // marginTop:40
     },
     _des: {
         color: "#1F304C",
-        fontSize: 15,
+        fontSize: 20,
     },
     _step_main: {
         position: "absolute",
