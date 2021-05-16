@@ -15,8 +15,7 @@ export default function SliderTwo(props) {
                     <Image source={require("./../../img/sliderimage33.png")} style={styles.sliderimage12} />
                     {/* <Image source={require("./../../img/line.png")} style={styles.line} /> */}
                     <View style={styles._body}>
-                        <Text style={styles._des}>Cryptobank is the best {"\n"}place to earn,buy and trade {"\n"}your crypto.</Text>
-                        <Text style={{ color: "#1F304C", fontSize: 20, marginTop: 10 }}>On top of that you can {"\n"}consume your money with {"\n"}our crypto card!</Text>
+                        <Text style={styles._des}>Welcome to cryptobank and thank you for choosing us.</Text>
                     </View>
                 </ScrollView>
                 <TouchableOpacity style={styles._skip_btn} onPress={() => props.navigation.navigate("Home")}>
