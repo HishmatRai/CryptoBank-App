@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
     _des: {
         color: "#1F304C",
         fontSize: 20,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        textAlign:"center"
     },
     _step_main: {
         position: "absolute",
